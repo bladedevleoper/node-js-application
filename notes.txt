@@ -1,0 +1,76 @@
+Node.js Notes:
+--------------
+
+-Non-blocking I/O
+-Supports tens of thousands concurrent connections.
+Optimises throughout and scalability in web applications with many I/O operations
+
+
+
+Node is on a single threaded - which means it can it waits for events to happen.
+
+
+Difference between Synchronous and Asynchrous:
+----------------------------------------------
+Synchronous - means that you will have to wait for one thing at a time.
+
+Asynchrous - Can execute multiple things at a time and don't have to finish executing the current thing in order to move on to the next.
+
+
+NPM: Node Package Manager
+----
+
+- Used to install node programs / modules.
+
+node install <name of package>
+
+install it on your system:
+node install -g <name of packages>
+
+
+package.json File:
+------------------
+
+- really important file, which is used in node packages and applications. It goes in the root, it tells npm how the package is structured and how to run it.
+
+To get package.json run "npm init"
+
+package.json Example:
+{
+    "name": "exampleapp",
+    "version": 1.0.0",
+    "description": "Simple Task Manager",
+    "main": "server.js",
+    "author": "James Jones",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.15.2",
+        "express": "^4.14.0",
+        "mongojs": "^2.4.0"
+    }
+}
+
+
+
+Expresss:
+---------
+If we wanted to install the Node Express Module, we can write npm install express or npm install -g express (makes express global)
+
+when we install node programs it will install into the "node_modules" folder.
+
+
+
+Popular Modules:
+----------------
+
+- Express - Node Web Development Framework.
+- Connect - Extensive HTTP Server Framework.
+- Socket.io - Server side component for websockets.
+- Pug / Jade (formally named Jade) - Template Engine inspired by HAML. (Default template engine for Express)
+- Mongo / Mongoose - wrappers to interact with MongoDB.
+- Coffee-Script - CoffeeScript Compiler. (super set of JS)
+- Redis - Redis Client Library (cache database).
+
+
+
+
